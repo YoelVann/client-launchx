@@ -54,7 +54,7 @@ export default {
         id: null,
         name: "",
         username: "",
-        mainStack: ""
+        mainStack: "",
       },
       submitted: false
     };
@@ -64,7 +64,7 @@ export default {
       var data = {
         name: this.mcommander.name,
         username: this.mcommander.username,
-        mission: this.mcommander.mainStack
+        mainStack: this.mcommander.mainStack
       };
       MissionCommanderService.create(data)
         .then(response => {
@@ -77,7 +77,7 @@ export default {
     },
     newMissionCommander() {
       this.submitted = false;
-      this.explorer = {};
+      this.mcommander = {};
     }
   }
 };
