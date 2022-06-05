@@ -22,7 +22,7 @@ const routes =  [
     component: () => import("./components/MissionCommanderList")
   },
   {
-    path: "/add",
+    path: "/addMissionCommander",
     name: "add-mission-commander",
     component: () => import("./components/AddMissionCommander")
   },
